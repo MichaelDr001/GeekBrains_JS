@@ -1,0 +1,74 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.chessboard {
+    display: flex;
+    width: 650px;
+    flex-wrap: wrap;
+    margin: 100px;
+}
+
+.chessboardSquare {
+    width: 65px;
+    height: 65px;
+    border: 2px solid black;
+    background-color: rgb(107, 107, 107);
+    text-align: center;
+}
+
+.styleBtn {
+    width: 250px;
+    height: 100px;
+    margin: 30px 80px;
+}
+
+p {
+    margin-top: 20px;
+}
+
+.honest {
+    background-color: rgb(87, 87, 87);
+}
+
+.odd {
+    background-color: white;
+}
+
+.piece_pawn {
+    background-image: url(img/pawn.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.piece_castle {
+    background-image: url(img/castle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.piece_bishop {
+    background-image: url(img/bishop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.piece_knight {
+    background-image: url(img/knight.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.piece_king {
+    background-image: url(img/king.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.piece_queen {
+    background-image: url(img/queen.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
