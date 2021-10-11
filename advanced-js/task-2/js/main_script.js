@@ -28,8 +28,6 @@ class Basket {
 
 
 
-
-
 const mainPageProducts = [
     { id: 1, title: 'Down jacket', price: 150 },
     { id: 2, title: 'Costume', price: 350 },
