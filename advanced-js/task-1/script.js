@@ -5,26 +5,13 @@ const goods = [
     { title: 'Shoes', price: 250 },
 ];
 
-const $goodsList = document.querySelector('.goods-list');
-  
-const renderGoodsItem = ({ title, price }) => {
-    return `
-    <div class="goods-item">
-        <h3 class="goods_title"><span class="first_symbol">${title[0]}</span>${title.slice(1)}</h3>
-        <p class="goods_price"><span class="second_symbol">$</span>${price}</p>
-    </div>`;
+const renderGoodsItem = (title = 'item not selected', price = 0) => {
+    return `<div class="goods-item"><h3>${title}</h3><p>${price}</p></div>`;
 };
-  
-const renderGoodsList = (list = goods) => {
-    let goodsList = list.map(
-            (item) =>  {
-                return renderGoodsItem(item)
-            }
-        ).join('');
 
-    $goodsList.insertAdjacentHTML('beforeend', goodsList);
+const renderGoodsList = (list) => {
+    let goodsList = list.map(item => renderGoodsItem(item.title, item.price)).join(' ');
+    document.querySelector('.goods-list').innerHTML = goodsList;
 }
-  
-renderGoodsList();
 
-
+renderGoodsList(goods);
